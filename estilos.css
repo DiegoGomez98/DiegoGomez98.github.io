@@ -1,0 +1,182 @@
+:root {
+  --verde: #009754;
+  --gris: #bababa;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px; /* el width no va a ser más pequeña de 320px que es la dimensión más pequeña en celulares */
+  height: 334px;
+  text-align: center;
+  color: #fff;
+  background: rgb(3, 96, 54);
+  background: radial-gradient(
+    circle,
+    rgba(3, 96, 54, 1) 0%,
+    rgba(7, 43, 27, 0.7679446778711485) 45%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+header img {
+  width: 150px;
+  margin-top: 32px;
+  align-self: center; /* forma de centrar un elemento que está dentro de un contenedor flex */
+}
+
+.header--title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 8px;
+  text-align: center;
+  align-self: center;
+}
+
+.header--title-container h1 {
+  font-size: 2.4 rem;
+  font-weight: bold; /* peso de la fuente */
+  line-height: 2.6rem;
+}
+
+.header--title-container p {
+  margin-top: 12px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.header--title-container .header--button {
+  position: absolute;
+  left: calc(50% - 84px);
+  top: 270px;
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 180px;
+  height: 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 20px -11px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 10px 20px -11px rgba(255, 255, 255, 1);
+  box-shadow: 0px 10px 20px -11px rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.header--button span {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url(./assets/icons/down-arrow.svg);
+}
+
+/* MAIN */
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+
+.main--image-conteiner {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-image-conteiner--tittle {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto; /*esto nos ayuda a que se centre aunque no ocupemos el 100%*/
+}
+
+.main--image-conteiner .background-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; /*esto nos ayuda a que se centre aunque no ocupemos el 100%*/
+  margin-bottom: 50px;
+  background-image: url(./assets/img/footer.jpg);
+  /*buenas prácticas para imgs de fonto*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main--image-conteiner h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+.main--image-conteiner p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: var(--gris);
+}
+
+/*TABLA*/
+
+.main-tables-container {
+  width: 100%;
+  height: auto;
+}
+
+.main-tables-container--box {
+  width: 100%;
+  height: auto;
+}
+
+.main-tables-container--box p {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.table {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.table div {
+  padding: 10px;
+  border: 1px solid var(--gris);
+  font-size: 1.4rem;
+  color: var(--gris);
+}
