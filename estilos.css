@@ -1,6 +1,7 @@
 :root {
   --verde: #009754;
   --gris: #bababa;
+  --tenue: #242121;
 }
 
 html {
@@ -102,13 +103,59 @@ main {
   background-color: #000;
 }
 
-.main--image-conteiner {
+.diego--container {
   width: 100%;
   height: auto;
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
   color: #fff;
+}
+
+.diego--container .background-image0 {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; /*esto nos ayuda a que se centre aunque no ocupemos el 100%*/
+  margin-bottom: 40px;
+  background-image: url(./assets/img/DSC_002222.jpg);
+  /*buenas prácticas para imgs de fonto*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.diego-conteiner--tittle h2 {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+.diego-conteiner--tittle p {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: var(--gris);
+  padding: 0 20px;
+}
+
+.main--image-conteiner {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.main--image-conteiner .main-tittle {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--verde);
 }
 
 .main-image-conteiner--tittle {
@@ -212,4 +259,115 @@ main {
 
 .table div:nth-child(10) {
   border-bottom-right-radius: 5px;
+}
+
+.main-skills {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+.skills--logo {
+  position: absolute; /*al contenedor padre le ponemos position relative para que este contenedor buscar al primer padre con dicha posición y se ubique a partir de él para delimitar su movimiento*/
+  width: 80px;
+  height: 50px;
+  background-image: url(./assets/icons/logo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -35px;
+  left: calc(50% - 40px);
+}
+
+.skills--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.skills--title h2 {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--verde);
+}
+
+.skills--title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--gris);
+}
+
+.skill-card--container {
+  width: 100%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+}
+
+.skill--card-HTML {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/icons/html.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+}
+
+.skill--card-HTML:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.skill--card-CSS {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/icons/css.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+}
+
+.skill--card-CSS:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.skill--card-JAVASCRIPT {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/icons/js.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+}
+
+.skill--card-JAVASCRIPT:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.skill--card-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--verde);
+  text-align: center;
 }
