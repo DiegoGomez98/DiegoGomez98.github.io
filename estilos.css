@@ -108,7 +108,7 @@ main {
   margin-bottom: 12px;
   font-size: 2.4rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   border-bottom: 2px solid var(--verde);
 }
 
@@ -121,16 +121,29 @@ main {
   color: #fff;
 }
 
+.diego-father {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .diego--container .background-image0 {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto; /*esto nos ayuda a que se centre aunque no ocupemos el 100%*/
+  width: 300px;
+  height: 300px;
   margin-bottom: 40px;
-  background-image: url(./assets/img/DSC_002222.jpg);
+  background-image: url(./assets/img/perfiol.jpg);
   /*buenas prácticas para imgs de fonto*/
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+}
+
+.diego-conteiner--tittle {
+  width: 100%;
+  max-width: 400px;
 }
 
 .diego-conteiner--tittle h2 {
@@ -149,6 +162,8 @@ main {
   padding: 0 20px;
 }
 
+/*MAIN*/
+
 .main--image-conteiner {
   width: 100%;
   height: auto;
@@ -158,12 +173,12 @@ main {
   color: #fff;
 }
 
-.main--image-conteiner .main-tittle {
+.main--image-conteiner .main-title {
   display: inline-block;
   margin-bottom: 12px;
   font-size: 2.4rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   border-bottom: 2px solid var(--verde);
 }
 
@@ -172,6 +187,19 @@ main {
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto; /*esto nos ayuda a que se centre aunque no ocupemos el 100%*/
+}
+
+.main--father {
+  width: 100%;
+  min-width: 288px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main--father > div {
+  height: 748px;
 }
 
 .main--image-conteiner .background-image {
@@ -206,6 +234,7 @@ main {
 }
 
 .main--image-conteiner p {
+  max-width: 300px;
   margin-bottom: 30px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -214,6 +243,7 @@ main {
 }
 
 /*TABLA*/
+
 /*   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,7 +268,7 @@ main {
 }
 
 .table {
-  width: 90%;
+  width: 80%;
   height: auto;
   margin: 20px auto;
   display: grid;
@@ -306,6 +336,7 @@ main {
   font-size: 2.4rem;
   font-weight: bold;
   border-bottom: 2px solid var(--verde);
+  margin-bottom: 40px;
 }
 
 .skills--title p {
@@ -316,17 +347,20 @@ main {
   color: var(--gris);
 }
 
-.skill-card--container {
+.skill-father {
   width: 100%;
   min-width: 288px;
-  max-width: 400px;
-  height: 150px;
-  margin: 15px auto;
-  padding: 15px;
+}
+
+.skill-card--container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
 }
 
 .skill--card-HTML {
-  display: inline-block;
   height: 100%;
   width: 100%;
   background-image: url(./assets/icons/html.png);
@@ -334,6 +368,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(1);
+  margin-bottom: 12px;
 }
 
 .skill--card-HTML:hover {
@@ -342,7 +377,6 @@ main {
 }
 
 .skill--card-CSS {
-  display: inline-block;
   height: 100%;
   width: 100%;
   background-image: url(./assets/icons/css.png);
@@ -350,6 +384,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(1);
+  margin-bottom: 12px;
 }
 
 .skill--card-CSS:hover {
@@ -358,7 +393,6 @@ main {
 }
 
 .skill--card-JAVASCRIPT {
-  display: inline-block;
   height: 100%;
   width: 100%;
   background-image: url(./assets/icons/js.png);
@@ -366,6 +400,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(1);
+  margin-bottom: 12px;
 }
 
 .skill--card-JAVASCRIPT:hover {
