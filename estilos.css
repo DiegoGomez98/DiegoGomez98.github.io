@@ -413,6 +413,253 @@ main {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 1.8rem;
-  color: var(--verde);
+  color: #fff;
   text-align: center;
+}
+
+.photo-Container {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url(./assets/img/photo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.photo-Container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: #fff;
+}
+
+/* PROJECTS */
+
+.main-projects-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+  color: #fff;
+}
+
+.projects--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  /* margin-top: 50px; */
+}
+
+.projects--title h2 {
+  display: inline-block;
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: #fff;
+  border-bottom: 2px solid var(--verde);
+}
+
+.projects--title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #bababa;
+}
+
+.projects-container--slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects-container--card {
+  position: relative;
+  /* scroll-snap-align: center; centra automaticamente al momento de hacer scroll */
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  /* padding: 0 15px; */
+  background-image: url(./assets/img/figuras.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+.projects-container--card2 {
+  position: relative;
+  /* scroll-snap-align: center; */
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  /* padding: 0 15px; */
+  background-image: url(./assets/img/madrid.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+.projects-container--card3 {
+  position: relative;
+  /* scroll-snap-align: center; */
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  /* padding: 0 15px; */
+  background-image: url(./assets/img/game.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+.info-projects-container--card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 30px #242121;
+  border: 1px solid #ffffff40;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+  background-color: rgba(243, 243, 243, 0.2);
+}
+
+.title-projects {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  padding: 8px;
+  top: -15px;
+  background-color: #009754;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.projects-info-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-card--title {
+  padding: 40px 0 50px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #fff;
+}
+
+.projects-card-text {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 20px;
+}
+
+.project-card-ca {
+  width: 150px;
+  height: 48px;
+  -webkit-box-shadow: 0px 7px 12px -2px rgba(0, 151, 84, 1);
+  -moz-box-shadow: 0px 7px 12px -2px rgba(0, 151, 84, 1);
+  box-shadow: 0px 7px 12px -2px rgba(0, 151, 84, 1);
+  border: 2px solid var(--verde);
+  border-radius: 5px;
+}
+
+.project-card-ca a {
+  text-decoration: none;
+  color: #009754;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+
+.project-card-ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: text-bottom;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  background-color: var(--gris);
+}
+
+footer section {
+  display: flex;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+  display: flex;
+}
+
+.ancle1 img {
+  width: 20px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.ancle2 img {
+  width: 20px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.ancle3 img {
+  width: 20px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.ancle4 img {
+  width: 20px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.left a {
+  text-decoration: none;
+  color: #000;
+}
+
+.center img {
+  width: 80px;
+}
+
+.right span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
 }
